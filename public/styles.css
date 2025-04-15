@@ -1,0 +1,87 @@
+body{
+    display: flexbox;
+    text-align: center;
+    background-image: url(pictures/beautiful_roses_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div {
+    margin: 25px 25px 25px 25px;
+    padding: 25px 25px 25px 25px;
+}
+header, footer {
+    padding: 10pt;
+    text-align: center;
+    background-color: #fcc2ff;
+}
+
+video {
+    margin: 25px 25px 25px 25px;
+    padding: 25px 25px 25px 25px;
+    size: 75%;
+}
+
+button {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+h1, h2{
+    color: crimson;
+    display: flex;
+    border-style: dashed;
+    margin: 25px 25px 25px 25px;
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-style: italic;
+    background-color: #fcc2ff;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+video, canvas {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+}
+#capture {
+    display: block;
+    margin: 20px auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10pt;
+}
+
+.item {
+    flex: 1 1 100%;
+    max-width: 400px;
+    margin: 10px;
+    background-color: #e2e2e2;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    header, footer {
+        font-size: 0.9em;
+    }
+}
